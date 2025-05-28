@@ -1,2 +1,2 @@
 # DistillQPP
-DistillQPP is a lightweight query performance prediction model that uses knowledge distillation from ranking models to estimate query difficulty more accurately and efficiently.
+DistillQPP is a deep learning framework for Query Performance Prediction (QPP) that uses knowledge distillation to transfer insights from powerful ranking models (like BERT-based rankers) to lightweight QPP models. By aligning the internal representations of queries and documents between a teacher (ranking model) and a student (QPP model), DistillQPP improves the prediction of query difficulty without requiring large labeled datasets. It outperforms traditional and neural QPP baselines on multiple benchmark datasets.
