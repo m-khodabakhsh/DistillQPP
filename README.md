@@ -14,5 +14,5 @@ https://github.com/Narabzad/BERTQPP
 
 # Training
 
-To train the DistillQPP model, execute the train.py script to optimize for ```MRR@10``` using BM25 retrieval on the MS MARCO training set. Alternatively, custom evaluation metrics can be supported by generating the corresponding training .pkl file. Users may also modify key hyperparameters—such as ```epoch_num```, ```batch_size```, and the initial ```pre-trained model```—within the script. In our experiments, we adopted the ```bert-base-uncased``` model. Upon completion of training, the resulting model checkpoint will be stored in the ```models/``` directory.
+Before training the DistillQPP model, ensure that the path to the teacher ranker is correctly specified in the ```model.py``` script. Subsequently, execute train.py to optimize the model for ```MRR@10```, using BM25 retrieval on the MS MARCO training set. Alternatively, the model can be trained with a custom evaluation metric by preparing the corresponding training ```.pkl``` file. Users may also adjust hyperparameters such as ```epoch_num```, ```batch_size```, and the initial pre-trained model within the script. In our experiments, we employed the ```bert-base-uncased``` model. Upon completion, the trained model will be saved in the ```models/``` directory.
 # Evaluate
