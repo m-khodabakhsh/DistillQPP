@@ -11,3 +11,8 @@ Once the PreTTR model has been successfully trained on MS MARCO, store the resul
 # Input
 The input format for DistillQPP follows the same structure as BERTQPP, utilizing serialized files such as ```train_mrr.pkl``` and ```test.pkl```, which contain pre-encoded query-document pairs along with their corresponding metadata. For further details on the data preparation and format, please refer to the official BERTQPP repository:
 https://github.com/Narabzad/BERTQPP
+
+# Training
+
+To train the DistillQPP model, execute the train.py script to optimize for ```MRR@10``` using BM25 retrieval on the MS MARCO training set. Alternatively, custom evaluation metrics can be supported by generating the corresponding training .pkl file. Users may also modify key hyperparameters—such as ```epoch_num```, ```batch_size```, and the initial ```pre-trained model```—within the script. In our experiments, we adopted the ```bert-base-uncased``` model. Upon completion of training, the resulting model checkpoint will be stored in the ```models/``` directory.
+# Evaluate
