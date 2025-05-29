@@ -6,4 +6,4 @@ To begin, utilize the PreTTR ranking model and train it on the MS MARCO dataset.
 You can use the following pretrained checkpoint as a starting point:
 https://huggingface.co/sebastian-hofstaetter/prettr-distilbert-split_at_3-margin_mse-T2-msmarco
 
-Once the PreTTR model has been successfully trained on MS MARCO, store the resulting teacher model in the teacher directory for use in the knowledge distillation process.
+Once the PreTTR model has been successfully trained on MS MARCO, store the resulting teacher model in the ```teacher``` directory for use in the knowledge distillation process.
