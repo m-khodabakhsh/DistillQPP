@@ -7,3 +7,7 @@ You can use the following pretrained checkpoint as a starting point:
 https://huggingface.co/sebastian-hofstaetter/prettr-distilbert-split_at_3-margin_mse-T2-msmarco
 
 Once the PreTTR model has been successfully trained on MS MARCO, store the resulting teacher model in the ```teacher``` directory for use in the knowledge distillation process.
+
+# Input
+The input format for DistillQPP follows the same structure as BERTQPP, utilizing serialized files such as ```train_mrr.pkl``` and ```test.pkl```, which contain pre-encoded query-document pairs along with their corresponding metadata. For further details on the data preparation and format, please refer to the official BERTQPP repository:
+https://github.com/Narabzad/BERTQPP
